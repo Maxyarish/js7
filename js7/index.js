@@ -41,9 +41,12 @@ const div=document.createElement('div');
 const startBtn=document.createElement('button');
 startBtn.addEventListener('click',startWatch)
 const clearBtn=document.createElement('button');
+startBtn.style.backgroundColor='green'
+
 clearBtn.addEventListener('click',clearWatch)
 startBtn.textContent='start';
 clearBtn.textContent='clear';
+clearBtn.style.backgroundColor='red'
 div.append(startBtn,clearBtn);
 section.append(h1,div);
 h1.textContent='00:00:00';
